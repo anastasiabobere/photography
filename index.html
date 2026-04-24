@@ -1,0 +1,374 @@
+<!-- Anastasija Bobere, ab25286 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Photography, portfolio, professional photographer, photoshoot booking" />
+    <meta name="author" content="Anastasia Bobere" />
+    <meta
+      name="description"
+      content="Website for booking photography sessions" />
+    <title>Photography</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <nav id="stickyNav">
+      <img class="logo" src="assets/small_icon.svg" alt="logo" />
+
+      <img class="menu" id="menuToggle" src="assets/menu.svg" alt="menu" />
+
+      <ul id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li>
+          <a href="#photography_styles" class="nav-link">Photography styles</a>
+        </li>
+        <li><a href="#book" class="nav-link">Book</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#comment" class="nav-link">Leave a comment</a></li>
+      </ul>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home">
+      <div class="content">
+        <h1 id="heading_home">Capture Moments That Matter</h1>
+        <h3>Professional photography for every occasion</h3>
+        <p>
+          <span style="font-weight: 900">Photography</span>
+          is more than pictures — it's
+          <em>storytelling through light and emotion.</em>
+        </p>
+
+        <button class="btn"><a href="#book">Book</a></button>
+
+        <div class="cards" id="cards_home">
+          <div class="card"><img src="assets/photo1.jpg" alt="gallery" /></div>
+          <div class="card"><img src="assets/photo2.jpg" alt="gallery" /></div>
+          <div class="card"><img src="assets/photo3.jpg" alt="gallery" /></div>
+          <div class="card"><img src="assets/photo4.jpg" alt="gallery" /></div>
+          <div class="card"><img src="assets/photo5.jpg" alt="gallery" /></div>
+          <div class="card"><img src="assets/photo6.jpg" alt="gallery" /></div>
+        </div>
+        <div id="lightbox" class="lightbox">
+          <span id="closeBtn" class="close">&times;</span>
+          <img id="lightboxImg" />
+          <div class="nav prev" id="prevBtn">&#10094;</div>
+          <div class="nav next" id="nextBtn">&#10095;</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="content_about content">
+        <h2>About Me</h2>
+        <p>
+          I'm a passionate photographer with over 5 years of experience
+          capturing portraits, events, and artistic moments. What started as a
+          small hobby has grown into a creative career dedicated to modern,
+          elegant, and emotionally expressive photography.
+        </p>
+
+        <h3>How do I work?</h3>
+        <ol>
+          <li>
+            We begin by discussing your vision, preferred style, and
+            expectations.
+          </li>
+          <li>
+            I help you choose the perfect location, lighting, and overall
+            concept.
+          </li>
+          <li>
+            During the shoot, I guide you through natural poses and expressions.
+          </li>
+          <li>
+            Your photos are professionally retouched with attention to detail.
+          </li>
+          <li>Final images are delivered digitally in high resolution.</li>
+        </ol>
+
+        <div class="camera-container">
+          <div class="camera" id="camera">
+            <img src="assets/camera.png" id="camera_png" alt="camera icon" />
+            <p class="message" id="crystal-message">
+              Click for a photography tip...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+      <div class="content_pricing content">
+        <h2>Pricing</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Basic</h3>
+            <ul>
+              <li><img src="assets/yes.svg" alt="" /> 20-minute photoshoot</li>
+              <li><img src="assets/yes.svg" alt="" /> 5 edited photos</li>
+              <li><img src="assets/yes.svg" alt="" /> Online gallery</li>
+              <li><img src="assets/no.svg" alt="" /> Outfit change</li>
+              <li><img src="assets/no.svg" alt="" /> Location choice</li>
+            </ul>
+            <p>$50</p>
+          </div>
+
+          <div class="card">
+            <h3>Standard</h3>
+            <ul>
+              <li><img src="assets/yes.svg" alt="" /> 60-minute photoshoot</li>
+              <li><img src="assets/yes.svg" alt="" /> 15 edited photos</li>
+              <li><img src="assets/yes.svg" alt="" /> Online gallery</li>
+              <li><img src="assets/yes.svg" alt="" /> Outfit change</li>
+              <li><img src="assets/no.svg" alt="" /> Multiple locations</li>
+            </ul>
+            <p>$90</p>
+          </div>
+
+          <div class="card">
+            <h3>Premium</h3>
+            <ul>
+              <li><img src="assets/yes.svg" alt="" /> 120-minute photoshoot</li>
+              <li><img src="assets/yes.svg" alt="" /> 30 edited photos</li>
+              <li><img src="assets/yes.svg" alt="" /> Online gallery</li>
+              <li>
+                <img src="assets/yes.svg" alt="" /> Unlimited outfit changes
+              </li>
+              <li><img src="assets/yes.svg" alt="" /> Multiple locations</li>
+            </ul>
+            <p>$150</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTOGRAPHY STYLES-->
+    <section id="photography_styles">
+      <div class="content_photography_styles content">
+        <h2>Photography Styles</h2>
+        <p>
+          Explore the most <span style="font-weight: 900">popular</span>
+          photography styles that shape modern visual storytelling.
+        </p>
+
+        <table id="photo_styles_table">
+          <thead>
+            <tr>
+              <th>Style</th>
+              <th>Origin</th>
+              <th>Focus</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Portrait</td>
+              <td>Global</td>
+              <td>Faces, expressions</td>
+              <td>★★★★★</td>
+            </tr>
+
+            <tr>
+              <td>Editorial</td>
+              <td>Europe</td>
+              <td>Fashion, storytelling</td>
+              <td>★★★★☆</td>
+            </tr>
+
+            <tr>
+              <td>Street</td>
+              <td>USA</td>
+              <td>Lifestyle & candid moments</td>
+              <td>★★★★☆</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button class="btn" id="toggle_info_btn" style="width: 100px">
+          Show More
+        </button>
+
+        <p id="more_info_p" style="display: none">
+          Each photography style carries its own mood — from dramatic fashion
+          frames to calm portrait close-ups. Choosing a style helps shape the
+          atmosphere and story of your shoot.
+        </p>
+      </div>
+    </section>
+
+    <!-- BOOK -->
+    <section id="book">
+      <div class="content_book content">
+        <h2>Book Your Photoshoot</h2>
+        <div class="form">
+          <form name="contact" netlify>
+            <label for="fname">First name:</label><br />
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              pattern="[A-Za-z]+" /><br />
+
+            <label for="lname">Last name:</label><br />
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              pattern="[A-Za-z]+" /><br />
+
+            <label for="email">Your Email:</label><br />
+            <input type="email" id="email" name="email" /><br />
+
+            <div class="radio-container">
+              <label for="basic">
+                Basic
+                <input
+                  type="radio"
+                  id="basic"
+                  name="plan"
+                  value="basic" /> </label
+              ><br />
+
+              <label for="standard">
+                Standard
+                <input
+                  type="radio"
+                  id="standard"
+                  name="plan"
+                  value="standard" /> </label
+              ><br />
+
+              <label for="premium">
+                Premium
+                <input
+                  type="radio"
+                  id="premium"
+                  name="plan"
+                  value="premium" /> </label
+              ><br />
+            </div>
+
+            <input type="submit" value="Book" class="btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <div class="content_testimonials content">
+        <h2>Testimonials</h2>
+        <h3>
+          In order to submit your testimonial please fill out the survey after
+          your appoiment.
+        </h3>
+        <div class="cards_testimonials cards">
+          <div class="card">
+            <h3>Amelia Dove</h3>
+            <p>
+              Amazing experience! The photos turned out stunning and captured my
+              personality perfectly.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>John Doe</h3>
+            <p>
+              Professional, friendly, and creative. I felt comfortable during
+              the entire shoot.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Emily Blossom</h3>
+            <p>
+              Beautiful editing and incredible eye for detail. Highly recommend!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMENT -->
+    <section id="comment">
+      <div class="content_book content">
+        <h2 style="font-size: 40px">Leave a comment!</h2>
+
+        <div class="form">
+          <form id="commentForm">
+            <label for="fname">First name:</label><br />
+            <input type="text" id="fname" name="fname" required /><br />
+
+            <label for="lname">Last name:</label><br />
+            <input type="text" id="lname" name="lname" required /><br />
+
+            <label for="message">Your comment:</label><br />
+            <textarea id="message" name="message" rows="4" required></textarea
+            ><br />
+
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div id="commentsBox">
+        <h3 id="commentsH3">All Comments</h3>
+        <div id="comments"></div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Author</h3>
+          <ul>
+            <li>Anastasija Bobere, ab25286</li>
+            <li>© 2025 Photography</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              Email:
+              <a href="mailto:anastasija@example.com">anastasija@example.com</a>
+            </li>
+            <li>Phone: +371 20000000</li>
+            <li>Location: Riga, Latvia</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Follow Me</h3>
+          <ul class="social-links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
